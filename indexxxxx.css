@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 90vh;
+    width: 70vw;
+    background-color: seagreen;
+    margin: 5vh auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*
+        Выравнивание flex-элементов вдоль основной оси
+        (относительно соответствующего размера контейнера)
+        flex-start первый элемент у начала оси (с левого края)
+        flex-end последний элемент рядом с окончанием оси (с правого края)
+        center
+        space-around одинаковые отступы вокруг элемента
+        space-between одинаковые отступы между элементами
+    */
+    align-items: flex-start;
+    /*
+        Расположение элементовв вдоль поперечной оси
+        stretch растянуть по размеру оси
+        flex-start
+        flex-end
+        center
+    */
+}
+.card{
+    padding: 20px;
+    font: 30px / 1 sans-serif;
+    border-radius: 50%;
+    background: cornsilk;
+    color: seagreen;
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover {
+    background: springgreen;
+}
