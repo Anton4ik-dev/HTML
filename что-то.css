@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    background: crimson;
+    color: cornsilk;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 300px;
+    /* height: 150px; */
+    overflow: hidden; /*visible | scroll | auto*/
+    border-width: 10px;
+    border-color: #ffff00;
+    border-style: solid; /* dotted | dashed | solid | double*/
+    border:5px solid;
+    border-right-width: 10px;
+    border-right-color: greenyellow;
+    text-align: justify;
+    line-height: 1;
+    padding: 20px 50px 0;
+    margin: 20px 40px 70px 20px;
+    display: inline-block; /* block | inline*/
+}
+body {
+    background-color: #000000;
+}
