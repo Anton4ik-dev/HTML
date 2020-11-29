@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Texturina:ital,wght@1,200&display=swap');
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(#cebdf2, #a5f2b0);
+    font: 24px 'Texturina', serif;
+    padding: 50px calc(50% - 350px);
+    overflow-x: hidden;
+}
+h2{
+    font: 500 60px "Oswald", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2::before, h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+}
+p{
+    text-align: justify;
+    margin: 50px 0;
+}
+p::before{
+    content: "^_^ ";
+    color: #8271a6;
+    font-family: "Oswald", sans-serif;
+}
+p::after {
+    content: attr(title);
+    color: #8271a6;
+    font-family: "Oswald", sans-serif;
+}
+.otec{
+    height: 500px;
+    background-color: rgba(0,0,0, .16);
+    position: relative;
+}
+.ditya{
+    width: 100px;
+    height: 100px;
+    background: #a5f2b0;
+    border: 3px dotted #cebdf2;
+}
+.dite1 {
+    border-radius: 50%;
+    position: absolute; /*Абсолютное позиционирование распологает элемент относительно ближайшего родителя с позишн отличным от статик, если такого нет, то относитьльно vp*/
+    bottom: 100px;
+    right: 50px;
+    z-index: 1;
+}
+
+.dite2{
+    background: #cebdf2;
+    border-color: #a5f2b0;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+.dite3{
+    border-radius: 30px 100px 10px;
+    background-color: wheat;
+    /* width: auto; */
+    left: calc(50%-300px); 
+    /* right: 300px; */
+    top:410px; 
+    /* height: auto; */
+    /* bottom:300px; */
+    /* position: fixed; */
+}
+/*Фиксированное позиронирование распологает элемент относитьльно границ экрана*/
+
+
+.house{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.house::after{
+    content: "";
+    width: 40px;
+    background: white;
+    height: 40px;
+    border: 1px double #fff;
+    box-shadow: 60px 0 0 0 #fff;
+    display: block;
+}
+.house::before{
+    width: 0;
+    height: 0;
+    border-right: 108px solid transparent;
+    border-bottom: 70px solid green;
+    content: "";
+    border-left: 94px solid transparent;
+    top: -70px;
+    left: 0;
+    position: absolute;
+}
